@@ -3075,7 +3075,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.120833337 - 0.10, 0, 0.0952890813 + 0.01, 0)
 ImageButton.Size = UDim2.new(0, 50, 0, 50)
 ImageButton.Draggable = true
-ImageButton.Image = "rbxassetid://75774010417827"
+ImageButton.Image = "rbxassetid://112528931029640"
 
 UICorner.CornerRadius = UDim.new(1, 0)
 UICorner.Parent = ImageButton
@@ -3131,7 +3131,7 @@ function CircleClick(Button, X, Y)
 				Circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Circle.BackgroundTransparency = 1.000
 				Circle.ZIndex = 10
-				Circle.Image = "rbxassetid://266543268"
+				Circle.Image = "rbxassetid://112528931029640"
 				Circle.ImageColor3 = Color3.fromRGB(255, 255, 255)
 				Circle.ImageTransparency = 0.7
 				local NewX = X - Circle.AbsolutePosition.X
@@ -3306,7 +3306,7 @@ Disc_Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Disc_Logo.BorderSizePixel = 0
 Disc_Logo.Position = UDim2.new(0, 5, 0, 1)
 Disc_Logo.Size = UDim2.new(0, 23, 0, 23)
-Disc_Logo.Image = "http://www.roblox.com/asset/?id=12058969086"
+Disc_Logo.Image = "http://www.roblox.com/asset/?id=112528931029640"
 
 Disc_Title.Name = "Disc_Title"
 Disc_Title.Parent = Discord
@@ -11702,8 +11702,8 @@ local Data = {
                     ["inline"] = false
                 },
                 {
-                    ["name"] = "Cảm Con Mẹ Nó Ơn Chúng Mày",
-                    ["value"] = "Đã Dùng Script Của Tuấn Anh IOS✅",
+                    ["name"] = "",
+                    ["value"] = "",
                     ["inline"] = false
                 }
             }
@@ -11722,9 +11722,9 @@ end
 game:GetService("StarterGui"):SetCore(
     "SendNotification",
     {
-        Title = "Tuấn Anh IOS",
+        Title = "HNC Roblox",
         Text = "Đã Tải Xong",
-        Icon = "rbxthumb://type=Asset&id=75774010417827&w=150&h=150",
+        Icon = "rbxassetid://112528931029640",
         Duration = 5
     }
 )
