@@ -16,6 +16,8 @@ Notification.new("<Color=Red>Chào mừng đến với HNC Hub!<Color=/>"):Displ
 task.wait(5)
 Notification.new("<Color=Cyan>Chúc bạn có một trải nghiệm vui vẻ!<Color=/>"):Display()
 task.wait(60)
+Notification.new("<Color=Cyan>Loading...<Color=/>"):Display()
+task.wait(60)
 -- Anh em đổi thông báo ở trên nha vd: Notification.new("<Color=White>đổi thông báo chỗ này nè!<Color=/>"):Display()
 -- LocalScript (đặt trong StarterPlayerScripts)
 local Players = game:GetService("Players")
@@ -27,7 +29,7 @@ local player = Players.LocalPlayer
 local TEXT = "Fast Attack By HNC Roblox"
 local TEXT_SIZE = 18                 -- kích thước chữ (không quá to)
 local GUI_OFFSET = Vector3.new(0, 1.8, 0) -- khoảng cách so với đầu
-local RAINBOW_SPEED = 100.0           -- tốc độ đổi màu (1 = bình thường, tăng để nhanh hơn)
+local RAINBOW_SPEED = 1.0           -- tốc độ đổi màu (1 = bình thường, tăng để nhanh hơn)
 
 local function createBillboardFor(character)
     if not character then return end
@@ -11826,3 +11828,24 @@ game:GetService("StarterGui"):SetCore(
         Duration = 5
     }
 )
+-- Đổi tất cả skill hiện tại + skill mới xuất hiện thành nhiều màu cầu vồng
+local function rainbowSkill(obj)
+    if obj:IsA("ParticleEmitter") or obj:IsA("Beam") or obj:IsA("Trail") then
+        obj.Color = ColorSequence.new{
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)),
+            ColorSequenceKeypoint.new(0.2, Color3.fromRGB(255, 165, 0)),
+            ColorSequenceKeypoint.new(0.4, Color3.fromRGB(255, 255, 0)),
+            ColorSequenceKeypoint.new(0.6, Color3.fromRGB(0, 255, 0)),
+            ColorSequenceKeypoint.new(0.8, Color3.fromRGB(0, 0, 255)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(128, 0, 128))
+        }
+    end
+end
+
+-- Đổi cho toàn bộ hiện có
+for _, obj in ipairs(workspace:GetDescendants()) do
+    rainbowSkill(obj)
+end
+
+-- Nghe khi có skill mới
+workspace.DescendantAdded:Connect(rainbowSkill)
