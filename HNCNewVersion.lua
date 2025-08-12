@@ -2841,7 +2841,7 @@ end
 
     function slowpos(Pos)
         Distance = (Pos.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-        Speed = 150
+        Speed = 400
         game:GetService("TweenService"):Create(
             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
             TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear),
@@ -3070,7 +3070,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BackgroundTransparency = 1 -- Nền trong suốt
 ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.120833337 - 0.10, 0, 0.0952890813 + 0.01, 0)
 ImageButton.Size = UDim2.new(0, 50, 0, 50)
@@ -4733,7 +4733,7 @@ local Events = Window:Tab("Auto Sea Event","10734941354")
 local Racer = Window:Tab("Race V4 & Esp","10747372167")
 local RaidFruit = Window:Tab("Raid & Fruits","10734975692")
 local Playerrss = Window:Tab("Teleport & PVP","10734910680")
-local MiscShop = Window:Tab("Shopee & Misc","10723434557")
+local MiscShop = Window:Tab("Shop & Misc","10723434557")
 local AutoStatus = Window:Tab("Status Server","10709770317")
 
 local AutoFarm = Main:Section("Auto Main Farm","Left")
