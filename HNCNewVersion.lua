@@ -3246,7 +3246,7 @@ function library:NaJa()
 
 	Main.Name = "Main"
 	Main.Parent = UI
-	Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0) --Color3.fromRGB(33, 33, 33)
+	Main.BackgroundColor3 = Color3.fromRGB(0, 0, 255) --Color3.fromRGB(33, 33, 33)
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Main.BackgroundTransparency = 0.6
 	Main.Size = UDim2.new(0, 520, 0, 380)
@@ -3281,7 +3281,7 @@ local UICorner = Instance.new("UICorner")
 local Disc_Logo = Instance.new("ImageLabel")
 local Disc_Title = Instance.new("TextLabel")
 
-Discord.Name = "Discord"
+Discord.Name = "Tik Tok"
 Discord.Parent = Main
 Discord.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 Discord.BackgroundTransparency = 1 -- Làm cho nền trong suốt
@@ -3317,7 +3317,7 @@ Disc_Title.BorderSizePixel = 0
 Disc_Title.Position = UDim2.new(0, 35, 0, 0)
 Disc_Title.Size = UDim2.new(0, 40, 0, 25)
 Disc_Title.Font = Enum.Font.SourceSansSemibold
-Disc_Title.Text = "Discord"
+Disc_Title.Text = "Tik Tok"
 Disc_Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Disc_Title.TextSize = 14.000
 Disc_Title.TextXAlignment = Enum.TextXAlignment.Left
@@ -3337,12 +3337,12 @@ end)
 
 -- Click event: copy Discord link
 Discord.MouseButton1Click:Connect(function()
-    (setclipboard or toclipboard)("https://discord.gg/AkDgH65MUF")
+    (setclipboard or toclipboard)("https://www.tiktok.com/@hnc_roblox?_t=ZS-8ynuCFNpQyg&_r=1")
     wait(.1)
     game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Discord",
-        Text = "Link Discord Đã Được Copy",
-        Button1 = "Okay Đại Ka✅",
+        Title = "Tik Tok",
+        Text = "Follow Me💕",
+        Button1 = "🌹",
         Duration = 20
     })
 end)
@@ -3380,7 +3380,7 @@ UICorner.Parent = ImageButton
     
 	TabHolder.Name = "TabHolder"
 	TabHolder.Parent = Top
-	TabHolder.BackgroundColor3 = Color3.fromRGB(20,20,20) --25
+	TabHolder.BackgroundColor3 = Color3.fromRGB(0,255,255) --25
 	TabHolder.BackgroundTransparency = 0.7
 	TabHolder.Position = UDim2.new(-0.010309278, 6, 0.023051, 0.2)
 	TabHolder.Size = UDim2.new(0, 410, 0, 40)
@@ -3390,7 +3390,7 @@ UICorner.Parent = ImageButton
 	TabContainer.Name = "TabContainer"
 	TabContainer.Parent = TabHolder
 	TabContainer.Active = true
-	TabContainer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TabContainer.BackgroundColor3 = Color3.fromRGB(16, 42, 220)
 	TabContainer.BackgroundTransparency = 1.000
 	TabContainer.Size = UDim2.new(0, 405, 0, 45)
 	TabContainer.CanvasSize = UDim2.new(2, 0, 0, 0)
@@ -3413,7 +3413,7 @@ UICorner.Parent = ImageButton
 	local Bottom = Instance.new("Frame")
 	Bottom.Name = "Bottom"
 	Bottom.Parent = Main
-	Bottom.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	Bottom.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
 	Bottom.BackgroundTransparency = 0.5
 	Bottom.Position = UDim2.new(0.0119760484, 2, 0.0916666687, 25)
 	Bottom.Size = UDim2.new(0, 505, 0, 300)
@@ -3455,7 +3455,7 @@ UICorner.Parent = ImageButton
 
 		FrameTab.Name = "FrameTab"
 		FrameTab.Parent = Tab
-		FrameTab.BackgroundColor3 = Color3.fromRGB(13, 13, 13) --34
+		FrameTab.BackgroundColor3 = Color3.fromRGB(4, 175, 236) --34
 		FrameTab.Size = UDim2.new(0, 130, 0, 30)
 		FrameTab.BackgroundTransparency = 1.4
 		UICorner_Tab.CornerRadius = UDim.new(0, 3)
@@ -3463,7 +3463,7 @@ UICorner.Parent = ImageButton
 
 		Tab.Name = "Tab"
 		Tab.Parent = TabContainer
-		Tab.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+		Tab.BackgroundColor3 = Color3.fromRGB(9, 137, 207)
 		Tab.Size = UDim2.new(0, 130, 0, 30)
 		Tab.BackgroundTransparency = 0.5
 		Tab.Text = ""
@@ -3474,7 +3474,7 @@ UICorner.Parent = ImageButton
 		ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		ImageLabel.Position = UDim2.new(0, 5, 0.2, 0)
 		ImageLabel.Size = UDim2.new(0, 20, 0, 20)
-		ImageLabel.Image = "http://www.roblox.com/asset/?id=" .. icon
+		ImageLabel.Image = "http://www.roblox.com/asset/?id=112528931029640" .. icon
 		ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
 		ImageLabel.ImageTransparency = 0.2
 		ImageLabel.BackgroundTransparency = 1
@@ -3504,7 +3504,7 @@ UICorner.Parent = ImageButton
 
 		Page.Name = "Page"
 		Page.Parent = Bottom
-		Page.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Page.BackgroundColor3 = Color3.fromRGB(98, 37, 209)
 		Page.Position = UDim2.new(0.01, 0, 0.015, 0)
 		Page.BackgroundTransparency = 1.000
 		Page.Size = UDim2.new(0, 495, 0, 295)
@@ -3515,7 +3515,7 @@ UICorner.Parent = ImageButton
 		Left.Name = "Left"
 		Left.Parent = Page
 		Left.Active = true
-		Left.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Left.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
 		Left.BackgroundTransparency = 1
 		Left.Size = UDim2.new(0, 242, 0, 290)
 		Left.ScrollBarThickness = 3
@@ -3524,7 +3524,7 @@ UICorner.Parent = ImageButton
 		Right.Name = "Right"
 		Right.Parent = Page
 		Right.Active = true
-		Right.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Right.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
 		Right.BackgroundTransparency = 1
 		Right.Size = UDim2.new(0, 242, 0, 290)
 		Right.ScrollBarThickness = 3
@@ -3563,7 +3563,7 @@ UICorner.Parent = ImageButton
 						TweenService:Create(
 							x.TextLabel,
 							TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{TextColor3 = Color3.fromRGB(255, 255, 255)}
+							{TextColor3 = Color3.fromRGB(0, 0, 255)}
 						):Play()
 						TweenService:Create(
 							x.ImageLabel,
@@ -3646,7 +3646,7 @@ UICorner.Parent = ImageButton
 
 			Section.Name = "Section"
 			Section.Parent = GetType(side)
-			Section.BackgroundColor3 = Color3.fromRGB(255, 255, 255) --25
+			Section.BackgroundColor3 = Color3.fromRGB(0, 0, 255) --25
 			Section.BackgroundTransparency = 0.9
 			Section.ClipsDescendants = true
 			Section.Size = UDim2.new(0, 240, 0, 340)
