@@ -15,9 +15,9 @@ task.wait(1)
 Notification.new("<Color=Red>Chào mừng đến với HNC Hub!<Color=/>"):Display()
 task.wait(5)
 Notification.new("<Color=Cyan>Chúc bạn có một trải nghiệm vui vẻ!<Color=/>"):Display()
-task.wait(60)
+task.wait(5)
 Notification.new("<Color=Cyan>Loading...<Color=/>"):Display()
-task.wait(60)
+task.wait(5)
 -- Anh em đổi thông báo ở trên nha vd: Notification.new("<Color=White>đổi thông báo chỗ này nè!<Color=/>"):Display()
 -- LocalScript (đặt trong StarterPlayerScripts)
 local Players = game:GetService("Players")
@@ -27,7 +27,7 @@ local player = Players.LocalPlayer
 
 -- Tùy chỉnh
 local TEXT = "Fast Attack By HNC Roblox"
-local TEXT_SIZE = 18                 -- kích thước chữ (không quá to)
+local TEXT_SIZE = 14                 -- kích thước chữ (không quá to)
 local GUI_OFFSET = Vector3.new(0, 1.8, 0) -- khoảng cách so với đầu
 local RAINBOW_SPEED = 1.0           -- tốc độ đổi màu (1 = bình thường, tăng để nhanh hơn)
 
